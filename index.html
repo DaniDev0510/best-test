@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobs For All</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">Jobs For All</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Acceuil</a>
+                    <a href="#" class=" nav-item nav-link " >Mon profil</a>
+                    <a href="about.html" class="nav-item nav-link">Offres d'emploi</a>
+                    <a href="#" class=" nav-item nav-link " >Stage</a>
+                  <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div class="   header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/african-american-smiling-businessman-suit-glasses-looking-camera.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(105, 179, 135, 0.5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Saisissez votre avenir Professionel des aujourdhui</h1>
+                                    
+                                    <a href="" style="   color: black; 
+                                    background-color: rgb(251, 255, 0);
+                                    border-color: rgb(212, 209, 15); 
+                                    border-style: solid;
+                                    text-decoration: none;
+                                    border-radius: 20px;
+                                    padding: 10px 20px;
+                                    display: inline-block;" class=" py-md-3 px-md-5 me-3 animated slideInLeft">Je Recrute</a>
+                                    
+                                    <a href=""style="   color: black; 
+                                    background-color: rgb(251, 255, 0);
+                                    border-color: rgb(212, 209, 15); 
+                                    border-style: solid;
+                                    text-decoration: none;
+                                    border-radius: 20px;
+                                    padding: 10px 20px;
+                                    display: inline-block;"  class=" py-md-3 px-md-5 animated slideInRight">Je Suis Candidat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Search Start -->
+        <div style= "   color:  black; 
+        background-color: rgb(251, 255, 0);
+        border-color: rgb(212, 209, 15); 
+     
+        padding: 10px 20px;
+        display: inline-block;"  class="container-fluid mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0" placeholder="Mots Cle" />
+                            </div>
+                           
+                           
+                            <div class="custom-select col-md-4">
+                                <select id="sector-select" name="sector" class="form-select border-0" aria-label="Sélectionner un secteur d'activité">
+                                    <option value="" disabled selected>Choisissez un secteur d'activité</option>
+                                    <option value="administration_gestion">Administration et Gestion</option>
+                                    <option value="agriculture_elevage">Agriculture et Élevage</option>
+                                    <option value="agriculteur">Agriculteur</option>
+                                    <option value="analyste_cybersecurite">Analyste en cybersécurité</option>
+                                    <option value="analyste_financier">Analyste financier</option>
+                                    <option value="architecte">Architecte</option>
+                                    <option value="artisanat">Artisanat</option>
+                                    <option value="artiste_peintre">Artiste peintre</option>
+                                    <option value="assistant_administratif">Assistant administratif</option>
+                                    <option value="assistants_pedagogiques">Assistants pédagogiques</option>
+                                    <option value="auditeur_financier">Auditeur</option>
+                                    <option value="auditeur_interne">Auditeur interne</option>
+                                    <option value="avocat">Avocat</option>
+                                    <option value="barman">Barman</option>
+                                    <option value="batiment_construction">Bâtiment et Construction</option>
+                                    <option value="biologiste">Biologiste</option>
+                                    <option value="bijoutier">Bijoutier</option>
+                                    <option value="chimiste">Chimiste</option>
+                                    <option value="chef_de_cuisine">Chef de cuisine</option>
+                                    <option value="chef_de_produit">Chef de produit</option>
+                                    <option value="chef_de_produit_marketing">Chef de produit marketing</option>
+                                    <option value="chirurgie">Chirurgie</option>
+                                    <option value="comptable">Comptable</option>
+                                    <option value="commerce_vente">Commerce et Vente</option>
+                                    <option value="commercial_terrain">Commercial terrain / Sédentaire</option>
+                                    <option value="community_manager">Community manager</option>
+                                    <option value="conducteur_de_train">Conducteur de train</option>
+                                    <option value="conducteur_de_travaux">Conducteur de travaux</option>
+                                    <option value="consultant_agriculture_durable">Consultant en agriculture durable</option>
+                                    <option value="consultant_developpement_durable">Consultant en développement durable</option>
+                                    <option value="consultant_securite_informatique">Consultant en sécurité informatique</option>
+                                    <option value="controleur_de_gestion">Contrôleur de gestion</option>
+                                    <option value="controleur_de_gestion_finance">Contrôleur de gestion en finance</option>
+                                    <option value="conseiller_gestion_patrimoine">Conseiller en gestion de patrimoine</option>
+                                    <option value="conseiller_juridique">Conseiller juridique</option>
+                                    <option value="conseiller_pedagogiques">Conseiller pédagogique</option>
+                                    <option value="conseiller_prevention_risques">Conseiller en prévention des risques</option>
+                                    <option value="createur_contenu_visuel">Créateur de contenu visuel</option>
+                                    <option value="cuisinier">Cuisinier / Cuisinière</option>
+                                    <option value="cuisinier_artisan">Cuisinier artisan</option>
+                                    <option value="designer_graphique">Designer graphique</option>
+                                    <option value="designer_interieur">Designer d’intérieur</option>
+                                    <option value="designer_mode">Designer de mode</option>
+                                    <option value="developpement_logiciel">Développement logiciel</option>
+                                    <option value="developpement_mobile">Développement web,mobile</option>
+                                    <option value="directeur_commercial">Directeur commercial</option>
+                                    <option value="directeur_etablissement">Directeur d’établissement</option>
+                                    <option value="directeur_financier">Directeur financier</option>
+                                    <option value="directeur_hotel">Directeur d'hôtel</option>
+                                    <option value="droit_juridique">Droit et Juridique</option>
+                                    <option value="education">Éducation</option>
+                                    <option value="education_specialisee">Éducation spécialisée</option>
+                                    <option value="electricien">Électricien</option>
+                                    <option value="eleveur">Éleveur</option>
+                                    <option value="enseignants">Enseignants</option>
+                                    <option value="entraîneur_sportif">Entraîneur sportif</option>
+                                    <option value="expert_comptable">Expert-comptable</option>
+                                    <option value="gestion_bases_de_donnees">Gestion de bases de données</option>
+                                    <option value="gestion_paie">Responsable de la gestion de la paie</option>
+                                    <option value="gestion_stocks">Gestion des stocks</option>
+                                    <option value="gestionnaire_ferme">Gestionnaire de ferme</option>
+                                    <option value="gestionnaire_projet_telecoms">Gestionnaire de projet télécoms</option>
+                                    <option value="graphiste">Graphiste</option>
+                                    <option value="illustrateur">Illustrateur</option>
+                                    <option value="ingenieur_civil">Ingénieur civil</option>
+                                    <option value="ingenieur_recherche">Ingénieur en recherche et développement</option>
+                                    <option value="juriste_entreprise">Juriste d’entreprise</option>
+                                    <option value="logisticien">Logisticien</option>
+                                    <option value="macon">Maçon</option>
+                                    <option value="marketing_communication">Marketing et Communication</option>
+                                    <option value="medecine_generale">Médecine générale</option>
+                                    <option value="medecins_specialistes">Médecins spécialistes</option>
+                                    <option value="menuisier">Menuisier</option>
+                                    <option value="notaire">Notaire</option>
+                                    <option value="ouvrier_agricole">Ouvrier agricole</option>
+                                    <option value="pharmacie">Pharmacie</option>
+                                    <option value="plombier">Plombier</option>
+                                    <option value="psychiatrie_psychologie">Psychiatrie et psychologie</option>
+                                    <option value="redacteur_web">Rédacteur web</option>
+                                    <option value="reseaux_telecommunications">Réseaux et télécommunications</option>
+                                    <option value="responsable_marketing">Responsable marketing</option>
+                                    <option value="responsable_rh">Responsable RH</option>
+                                    <option value="responsable_securite">Responsable de la sécurité</option>
+                                    <option value="sciences_recherche">Sciences et Recherche</option>
+                                    <option value="securite_informatique">Sécurité informatique</option>
+                                    <option value="serveur">Serveur</option>
+                                    <option value="specialiste_irrigation">Spécialiste en irrigation</option>
+                                    <option value="sport_loisirs">Sport et Loisirs</option>
+                                    <option value="technicien_agricole">Technicien agricole</option>
+                                    <option value="technicien_gestion_dechets">Technicien en gestion des déchets</option>
+                                    <option value="technicien_reseau">Technicien réseau</option>
+                                    <option value="transport_logistique">Transport et Logistique</option>
+                                    <option value="ux_ui_design">UX/UI design</option>
+                                    <option value="veterinaire">Vétérinaire</option>
+                                </select>
+                            </div>
+                            
+
+                            <div class="col-md-4">
+                                <select id="city-select" name="city" class="form-select border-0" aria-label="Sélectionner une ville">
+                                    <option value="" disabled selected>Choisissez une ville</option>
+                                    <option value="abengourou">Abengourou</option>
+                                    <option value="abidjan">Abidjan</option>
+                                    <option value="agboville">Agboville</option> 
+                                    <option value="bondoukou">Bondoukou</option>
+                                    <option value="bouaké">Bouaké</option>
+                                    <option value="bouna">Bouna</option>
+                                    <option value="boundiali">Boundiali</option>
+                                    <option value="dabou">Dabou</option>
+                                    <option value="daoukro">Daoukro</option>
+                                    <option value="daloa">Daloa</option>
+                                    <option value="ferkessedougou">Ferkessédougou</option>
+                                    <option value="gagnoa">Gagnoa</option>
+                                    <option value="guiglo">Guiglo</option>
+                                    <option value="issia">Issia</option>
+                                    <option value="korhogo">Korhogo</option>
+                                    <option value="lakota">Lakota</option>
+                                    <option value="man">Man</option>1§  
+                                    <option value="méagui">Méagui</option>
+                                    <option value="odienné">Odienné</option>
+                                    <option value="san-pedro">San Pedro</option>
+                                    <option value="sassandra">Sassandra</option>
+                                    <option value="seguela">Séguéla</option>
+                                    <option value="sinfra">Sinfra</option>
+                                    <option value="soubré">Soubré</option>
+                                    <option value="tabou">Tabou</option>
+                                    <option value="tingréla">Tingréla</option>
+                                    <option value="toumodi">Toumodi</option>
+                                    <option value="yamoussoukro">Yamoussoukro</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>Type de contrat</option>
+                                    <option value="1">CDD</option>
+                                    <option value="2">CDI</option>
+                                    <option value="3">Stage</option>
+                                    <option value="3">Freelance</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100">Rechercher</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explorer les differentes offres</h1>
+      
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Marketing Manager</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Product Designer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Creative Director</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Wordpress Developer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jobs End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h1 class="text-center mb-5">Our Clients Say!!!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
