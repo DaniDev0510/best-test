@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #dcd21f;
+    --primary: #6cf0ae;
     --secondary: #2B9BFF;
     --light: #EFFDF5;
     --dark: #2B3940;
@@ -112,7 +112,7 @@
         border-top: 1px solid #EEEEEE;
     }
 }
-
+ 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
     height: 75px;
@@ -284,18 +284,6 @@
     box-shadow: none;
 }
 
-
-
-#sector-select {
-    background-color: #f0f8ff; /* Couleur de fond */
-    color: #333; /* Couleur du texte */
-    border: 2px solid #edc70a; /* Bordure colorée */
-}
-
-#sector-select option {
-    background-color: #ffffff; /* Couleur de fond des options */
-    color: #333333; /* Couleur du texte des options */
-}
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item,
