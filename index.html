@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -35,7 +35,7 @@
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-border text-success" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -43,34 +43,168 @@
 
 
         <!-- Navbar Start -->
+
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                <h1 class="m-0 text-primary">Jobs For All</h1>
+                <h1 class="m-0 text-success">Jobs For All</h1>
             </a> 
-            <button class="btn " style="">
-                <img src="img/user.png" alt="Icône utilisateur" style="width: 30px; height: 30px;">
-            </button>
+           
+            <!DOCTYPE html>
+            <html lang="fr">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Pop-up avec bouton icône utilisateur</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+            </head>
+            <body>
             
+            <!-- Bouton pour ouvrir la modale -->
+        
+            </head>
+            <body>
             
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div style="color: aqua;" class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Acceuil</a>
-                    <a href="#" class=" nav-item nav-link " >Mon profil</a>
-                    <a href="about.html" class="nav-item nav-link">Offres d'emploi</a>
-                    <a href="#" class=" nav-item nav-link " >Stage</a>
-                  <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i class="fa fa-arrow-right ms-3"></i></a>
+        
+                <style>
+                    /* Personnalisation pour désactiver l'arrière-plan de la modale */
+                    .modal-backdrop {
+                        display: none !important; /* Supprime la superposition sombre */
+                    }
+                </style>
+            
+<!-- Bouton pour ouvrir la modale -->
+<button class="btn" style="" data-bs-toggle="modal" data-bs-target="#loginModal">
+    <img src="img/user.png" alt="Icône utilisateur" style="width: 30px; height: 30px;">
+</button>
+<!-- La modale -->
+
+
+<!-- La modale (Page de Connexion) -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Connexion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulaire de connexion -->
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Nom d'utilisateur</label>
+              <input type="text" class="form-control" id="username" placeholder="Identifiant " required>
             </div>
-        </nav>
+            <div class="mb-3">
+              <label for="password" class="form-label">Mot de passe</label>
+              <input type="password" class="form-control" id="password" placeholder=" Mot de passe" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+            </div>
+            <button type="boutton" class="btn btn-warning w-100">Se connecter</button>
+          </form>
+          <p><a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mot de passe oublie </a></p>
+        </div>
+        
+        <boutton type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#inscriptionModal">
+            Créer un compte
+        </boutton>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="inscriptionModalLabel">Inscription</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom Prenom Ou Nom de L'Entreprise</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Prenom</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Identifiant</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Mot de passe</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirm-password" class="form-label">Confirmer le mot de passe</label>
+                                <input type="password" class="form-control" id="confirm-password" required>
+                            </div>
+
+                            <div class="  custom-select col-md-4 mb-4 ">
+                                <select id="sector-select" name="sector" class="form-select border-5" aria-label="Sélectionner un secteur d'activité">
+                                    <option value="" disabled selected>Type de Profil </option>
+                                    <option value="administration_gestion">Recruteur</option>
+                                    <option value="agriculture_elevage">Candidat</option>
+                                </select>
+                            </div>
+                            
+
+
+                            <button type="submit" class="btn btn-warning w-100">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  
+  <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="color: aqua;" class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto p-4 p-lg-0">
+      <a href="index.html" class="nav-item nav-link active">Acceuil</a>
+      <a href="#" class="nav-item nav-link">Mon profil</a>
+      <a href="job-detail.html" class="nav-item nav-link">Offres d'emploi</a>
+      <a href="contact.html" class="nav-item nav-link">Contact</a>
+      <a href="about.html" class="nav-item nav-link">A propose De Nous</a>
+    </div>
+  </div>
+              
+            </div>
+    
         <!-- Navbar End -->
 
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <h1 class="text-center mb-5">Votre PUB Ici!!!</h1>
+            
                 <div class="owl-carousel testimonial-carousel">
 
                     <div class="testimonial-item bg-light rounded p-4 d-flex justify-content-center">
@@ -101,7 +235,7 @@
                     <img class="img-fluid" src="img/african-american-smiling-businessman-suit-glasses-looking-camera.jpg" alt="">
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(105, 179, 135, 0.5);">
                     
-                           >
+                           
                                 <div class="col-10 col-lg-8 ms-4">
                                     <h1 class="display-3 text-white animated slideInDown mb-4">Saisissez votre avenir Professionel des aujourdhui</h1>
                                     
@@ -320,7 +454,7 @@
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
                                         <div class="text-start ps-4">
-                                            <h5 class="mb-3">Marketing Manager</h5>
+                                            <h5 class="mb-3">Responsable Marketing </h5>
                                             <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>yamoussoukro</span>
                                             <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>temps plein</span>
                                             <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>100.000f - 250.000f</span>
@@ -329,8 +463,9 @@
                                     <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                                         <div class="d-flex mb-3">
                                             <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Voir plus </a>
+                                            <a class="btn btn-primary" href="job-detail.html">Voir plus </a>
                                         </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date de Publication: 2 jan, 2025</small>
                                         <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date limite: 01 mars, 2025</small>
                                     </div>
                                 </div>
@@ -351,6 +486,7 @@
                                             <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
                                             <a class="btn btn-primary" href="">Voir plus</a>
                                         </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date de Publication: 2 jan, 2025</small>
                                         <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date limite: 27 fev, 2025</small>
                                     </div>
                                 </div>
@@ -370,7 +506,9 @@
                                         <div class="d-flex mb-3">
                                             <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
                                             <a class="btn btn-primary" href="">Voir plus</a>
-                                        </div>
+                                        </div>         
+                                         <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date de Publication: 2 jan, 2025</small>
+
                                         <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Limite: 04 Mars, 2025</small>
                                     </div>
                                 </div>
@@ -391,24 +529,49 @@
                                             <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
                                             <a class="btn btn-primary" href="">Voir plus</a>
                                         </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date de Publication: 2 jan, 2025</small>
                                         <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date limite: 22 fev, 2025</small>
                                     </div>
                                 </div>
                             </div>
-                            <a class="btn btn-primary py-3 px-5 ms-5 " href="">Plus D'offre</a>
+                            <div class="d-flex justify-content-center">
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Precedent</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item " aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Suivant</a>
+                                </div>
+                                  </li>
+                                </ul>
+                              </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Jobs End -->
+        <div class="card text-center">
+            <div class="card-header">
+              
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Accompagnement Special</h5>
+              <p class="card-text">.</p>
+              <a href="#" class="btn btn-primary">Beneficiez</a>
+            </div>
+         
+            </div>
+          </div>
 
-
-        <!-- Testimonial Start -->
-     
         
-
-        <!-- Footer Start -->
+     <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
@@ -445,16 +608,16 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Jobs For All</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">jobs for all</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">DaniDev</a>
+							Designed By <a class="border-bottom" href="Digitrans.com">Digitrans</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Acceuil</a>
+                                <a href="">Home</a>
                                 <a href="">Cookies</a>
-                                <a href="">Aide</a>
+                                <a href="">Help</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>
